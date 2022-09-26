@@ -62,6 +62,8 @@ header nav ul li a:hover {
     justify-content: space-evenly;
     width: 75%;
     margin: auto;
+
+    /* height: calc(100vh - 40px); */
 }
 
 .informacoes-texto {
@@ -104,23 +106,23 @@ header h2 {
 
 } */
 
-.projetos {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #3d3d3d;
-    width: 75%;
     margin: auto;
     border-radius: 2px;
 }
 
-.projetos h1 {
+.container h2 {
     width: 100%;
     color: #eaeaea;
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5rem;
+    font-weight: 500;
 }
 
 .container-projeto {
@@ -138,11 +140,13 @@ header h2 {
 
 .unidade {
     width: 350px;
+    height: 425px;
     text-decoration: none;
     color: #eaeaea;
     background-color: #2b2b2b;
     border-radius: 2px;
     padding: 5px;
+    border: 3px solid #2b2b2b;
 }
 
 .unidade:hover {
@@ -151,7 +155,10 @@ header h2 {
 
 .unidade:hover h3 {
     color: #eaeaea;
-    text-transform: uppercase;
+}
+
+.unidade:hover img {
+    opacity: 25%;
 }
 
 .unidade:hover p {
@@ -169,10 +176,27 @@ header h2 {
     width: 100%;
     height: 300px;
     margin: auto;
+    border-radius: 2px;
 }
 
 .unidade p {
     text-align: justify;
+}
+
+.span-acessar {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 335px;
+    height: 300px;
+    color: #2b2b2b;
+    font-size: 2rem;
+}
+
+.unidade:hover .span-acessar {
+    display: flex;
+    color: white;
 }
 
 .container-projeto .projeto-saiba-mais {
@@ -192,6 +216,44 @@ header h2 {
     background-color: #fdfd69;
     color: #2b2b2b;
 }
+
+.sobre {
+    background-color: #2b2b2b;
+}
+
+.sobre p, .contato p {
+    color: #eaeaea;
+    display: block;
+    width: 75%;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+
+.contato {
+    background-color: #3d3d3d;
+}
+
+.contato a {
+    color: #eaeaea;
+    transition: 0.15s;
+}
+
+
+.contato p a {
+    color: #fdfd69;
+}
+
+.contato a:hover {
+    color: #222222;
+}
+
+footer p {
+    height: 50px;
+    text-align: center;
+}
+
+
 
 
 
