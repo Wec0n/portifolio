@@ -25,7 +25,6 @@ header nav {
 header nav ul {
     display: flex;
     flex-direction: row;
-    height: 40px;
     background-color: #222222;
     list-style: none;   
 }
@@ -42,7 +41,6 @@ header nav ul li:last-child {
 }
 
 header nav ul li a {
-    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -50,6 +48,7 @@ header nav ul li a {
     text-decoration: none;
     color: #fdfd69;
     transition: 0.2s;
+    height: 40px;
 }
 
 header nav ul li a:hover {
@@ -71,18 +70,18 @@ header nav ul li a:hover {
     flex-basis: 500px;
 }
 
-header img {
+.informacoes img {
     width: 250px;
     margin: 50px 100px;
     border-radius: 2px 5px;
 }
 
-header h1 {
+.informacoes h1 {
     font-size: 4rem;
     color: #eaeaea;
 }
 
-header h2 {
+.informacoes h2 {
     font-size: 2rem;
     color: #eaeaea;
 }
@@ -253,6 +252,9 @@ footer p {
     text-align: center;
 }
 
+.menu-icon {
+    display: none;
+}
 
 
 
@@ -296,3 +298,81 @@ footer p {
     font-weight: 700;
     src: url('fonts/Oswald-Bold.ttf') format('truetype');
 }
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* RESPONSIVO */
+/* ---------------------------------------------------------------------------------------- */
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .informacoes {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .informacoes img {
+        margin: 5px;
+    }
+    
+    .informacoes-texto {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 0;
+    }
+
+    .habilidades {
+        margin: 0;
+    }
+
+    .container-projeto {
+        margin: 5px auto;
+    }
+
+    nav, nav ul, nav ul li, nav ul li a, nav ul li:last-child {
+        display: initial;
+    }
+
+    nav {
+        position: absolute;
+        left: -100%;
+        transition: 0.2s;
+        /* display: none; */
+        opacity: 0.98;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        flex-basis: 0;
+        border-bottom: 1px solid #3d3d3d;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    /* ÍCONE DO MENU */
+    .menu-icon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 10px;
+        z-index: 1;
+    }
+
+    .menu-icon:hover {
+        cursor: pointer;
+    }
+  }
