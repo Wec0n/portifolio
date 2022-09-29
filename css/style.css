@@ -247,9 +247,19 @@ header nav ul li a:hover {
     color: #222222;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 3px solid #eaeaea;
+}
+
 footer p {
-    height: 50px;
-    text-align: center;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-icon {
@@ -375,4 +385,29 @@ footer p {
     .menu-icon:hover {
         cursor: pointer;
     }
-  }
+
+}
+
+@media (min-width: 481px) and (max-width: 680px) {
+    header nav ul {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .informacoes-texto {
+        margin: 15px;
+    }
+    
+    .informacoes img {
+        margin: 15px;
+    }
+
+    .container-projeto {
+        width: 80%;
+        margin: 10px;
+    }
+    
+    .unidade {
+        width: 100%;
+    }
+}
