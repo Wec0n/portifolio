@@ -58,22 +58,13 @@ header nav ul li a:hover {
 .informacoes {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 75%;
+    justify-content: flex-start;
     margin: auto;
-
-    /* height: calc(100vh - 40px); */
+    margin-left: 30px;
 }
 
 .informacoes-texto {
     margin: 50px 100px;
-    flex-basis: 500px;
-}
-
-.informacoes img {
-    width: 250px;
-    margin: 50px 100px;
-    border-radius: 2px 5px;
 }
 
 .informacoes h1 {
@@ -325,10 +316,6 @@ footer p {
         width: 100%;
     }
     
-    .informacoes img {
-        margin: 5px;
-    }
-    
     .informacoes-texto {
         margin: 5px;
         display: flex;
@@ -395,10 +382,6 @@ footer p {
     }
 
     .informacoes-texto {
-        margin: 15px;
-    }
-    
-    .informacoes img {
         margin: 15px;
     }
 
