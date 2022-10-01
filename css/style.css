@@ -114,6 +114,7 @@ header nav ul li a:hover {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 500;
+    letter-spacing: 0.5rem;
 }
 
 .container-projeto {
@@ -253,7 +254,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-top: 3px solid #eaeaea;
+    border-top: 2px solid #eaeaea;
 }
 
 footer p {

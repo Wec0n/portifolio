@@ -1,62 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: #2b2b2b;
-}
-
-/* header {
-
-} */
-
-header nav {
-    width: 100%;
-    position: fixed;
-}
-
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    background-color: #222222;
-    list-style: none;   
-}
-
-header nav ul li {
-    display: flex;
-    flex-basis: 100px;
-    align-items: center;
-    justify-content: center;
-}
-
-header nav ul li:last-child {
-    text-transform: uppercase;
-}
-
-header nav ul li a {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #fdfd69;
-    transition: 0.2s;
-}
-
-header nav ul li a:hover {
-    color: #eaeaea;
-}
-
 main h1 {
     text-align: center;
     color: #eaeaea;
@@ -90,51 +31,16 @@ main p {
     font-size: 1.5rem;
 }
 
-footer p {
-    height: 50px;
-    text-align: center;
+a {
+    color: #eaeaea;
+    transition: 0.15s;
 }
 
 
-
-
-
-/* ---------------------------------------------------------------------------------------- */
-/* FONTES */
-/* ---------------------------------------------------------------------------------------- */
-
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 200;
-    src: url('../../css/fonts/Oswald-ExtraLight.ttf') format('truetype');
+p a {
+    color: #fdfd69;
 }
 
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 300;
-    src: url('../../css/fonts/Oswald-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 400;
-    src: url('../../css/fonts/Oswald-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 500;
-    src: url('../../css/fonts/Oswald-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 600;
-    src: url('../../css/fonts/Oswald-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 700;
-    src: url('../../css/fonts/Oswald-Bold.ttf') format('truetype');
+a:hover {
+    color: #222222;
 }
