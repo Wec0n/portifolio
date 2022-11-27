@@ -1,3 +1,7 @@
+.elementos-projeto {
+    margin-top: 40px;
+}
+
 main h1 {
     text-align: center;
     color: #eaeaea;
@@ -9,6 +13,7 @@ main .projeto-fotos {
     align-items: center;
     justify-content: center;
 }
+
 
 main .projeto-fotos img {
     margin: 10px;

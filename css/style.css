@@ -91,6 +91,7 @@ header nav ul li a:hover {
     text-indent: 10px;
     transition: 0.2s;
     cursor: default;
+    color: #eaeaea;
 }
 
 /* main {
@@ -348,21 +349,23 @@ footer p {
     }
 
     nav {
-        position: absolute;
+        position: fixed;
         left: -100%;
         transition: 0.15s;
         /* display: none; */
         opacity: 0.98;
+        border: 1px solid blue;
     }
 
     header nav ul {
         flex-direction: column;
+
     }
     header nav ul li {
         flex-basis: 0;
         border-bottom: 1px solid #3d3d3d;
     }
-
+    
     header nav ul li a {
         font-size: 1.2rem;
     }
@@ -370,12 +373,12 @@ footer p {
     /* ÍCONE DO MENU */
     .menu-icon {
         position: fixed;
-        width: 100%;
+        width: 12%;
         height: 40px;
         display: flex;
         flex-direction: column;
         gap: 5px;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         padding: 10px;
         z-index: 1;
