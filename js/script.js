@@ -17,7 +17,7 @@ window.onload = (() => {
         const btnSaibaMaisSiteSmec = document.querySelector('#saiba-mais-site-smec');
 
         btnSaibaMaisSiteSmec.addEventListener('click', () => {
-            const caminhoSiteSmec = fetch('../projetos/site-smec/site-smec.html');
+            const caminhoSiteSmec = fetch('./projetos/site-smec/site-smec.html');
             caminhoSiteSmec.then(r => r.text()).then(body => {
                 const tela = document.querySelector('main');
                 tela.innerHTML = body;
