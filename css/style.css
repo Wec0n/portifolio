@@ -269,8 +269,10 @@ footer p {
     display: none;
 }
 
-
-
+.desabilitado {
+    cursor: wait;
+    opacity: 0.5;
+}
 
 /* ---------------------------------------------------------------------------------------- */
 /* FONTES */
@@ -354,7 +356,6 @@ footer p {
         transition: 0.15s;
         /* display: none; */
         opacity: 0.98;
-        border: 1px solid blue;
     }
 
     header nav ul {
